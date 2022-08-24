@@ -2,26 +2,26 @@ CREATE OR REPLACE PROCEDURE airflow_test.dim_layer2_create(project_name STRING, 
 metadata_table STRING, batch_date STRING, output_dataset STRING,output_table STRING, other_details STRING)
   BEGIN
       /*
-      DECLARE project_name STRING DEFAULT "mobitv-development";
-      DECLARE dimension_dataset STRING DEFAULT "paytv_layer1";
-      DECLARE dimension_table STRING DEFAULT "dam_asset_partition";
-      DECLARE metadata_table STRING DEFAULT "dam_asset_extended_metadata_partition";
-      DECLARE output_dataset STRING DEFAULT "paytv_layer2";
-      DECLARE output_table STRING DEFAULT "dim_asset_layer2";
-      DECLARE batch_date STRING DEFAULT "2022-04-19";
+      DECLARE project_name STRING DEFAULT "";
+      DECLARE dimension_dataset STRING DEFAULT "";
+      DECLARE dimension_table STRING DEFAULT "";
+      DECLARE metadata_table STRING DEFAULT "";
+      DECLARE output_dataset STRING DEFAULT "";
+      DECLARE output_table STRING DEFAULT "";
+      DECLARE batch_date STRING DEFAULT "";
 
 
       DECLARE other_details STRING DEFAULT """{
-          "is_dimension_type_segregation_req": "Y",
-          "dimension_type_column": "asset_type",
-          "dimension_type_value": "channel",
-          "dimension_primary_key_column": "asset_id",
-          "dimension_batch_date_column": "batch_date",
-          "metadata_foreign_key_column": "asset_id",
-          "metadata_key_column": "master_asset_extended_metadata_cd",
-          "metadata_value_column": "asset_attribute_value",
-          "metadata_batch_date_column": "batch_date",
-          "control_table": "metadata.dam_asset_extended_metadata_flat_metadata"
+          "is_dimension_type_segregation_req": "",
+          "dimension_type_column": "",
+          "dimension_type_value": "",
+          "dimension_primary_key_column": "",
+          "dimension_batch_date_column": "",
+          "metadata_foreign_key_column": "",
+          "metadata_key_column": "",
+          "metadata_value_column": "",
+          "metadata_batch_date_column": "",
+          "control_table": "metadata.table"
         }"""; 
       */
       DECLARE attr STRING;
